@@ -8,7 +8,7 @@ services:
         restart: always
         environment:
             MYSQL_ROOT_PASSWORD: skyinfo
-            MYSQL_DATABASE: listavip
+            MYSQL_DATABASE: dbsysmodelo
         ports:
             - '3306'
         expose:
