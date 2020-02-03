@@ -1,4 +1,4 @@
-Cria um cluster da aplicação sysdemo (https://github.com/armandossrecife/sysdemo)
+Cria um cluster da aplicação sysdemo (https://github.com/topicos-sistemas-distribuidos/sysdemodocker.git)
 
 O cluster tem 2 nós sendo um nó do servidor de aplicação e outro nó do banco de dados. 
 
