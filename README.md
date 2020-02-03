@@ -2,6 +2,8 @@ Cria um cluster da aplicação sysdemo (https://github.com/topicos-sistemas-dist
 
 O cluster tem 2 nós sendo um nó do servidor de aplicação e outro nó do banco de dados. 
 
+Uma vez clonado o repositório cluster-app-sysdemo...
+
 1. Faça um docker compose para buidar as imagens necessarias
 
 $ docker-compose build
