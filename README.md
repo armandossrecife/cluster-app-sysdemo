@@ -1,4 +1,4 @@
-Cria um cluster da aplicação listavip (https://github.com/topicos-sistemas-distribuidos/app-crud-data.git)
+Cria um cluster da aplicação sysdemo (https://github.com/armandossrecife/sysdemo)
 
 O cluster tem 2 nós sendo um nó do servidor de aplicação e outro nó do banco de dados. 
 
@@ -16,13 +16,8 @@ $ docker container ls
 Devera aparecer
 
 CONTAINER ID        IMAGE                  COMMAND                  CREATED             STATUS              PORTS                    NAMES
-
-
-f658bbaea3fc        armandoss/app-server   "/root/app-crud-data…"   2 minutes ago       Up About a minute   0.0.0.0:8080->8080/tcp   app-server-1
-
-
+f658bbaea3fc        armandoss/sysdemo   "/root/sysdemo…"   2 minutes ago       Up About a minute   0.0.0.0:8080->8080/tcp   app-server-1
 b4f04b6a1395        mysql:5.6              "docker-entrypoint.s…"   2 minutes ago       Up About a minute   0.0.0.0:3306->3306/tcp   compose_mydb_1
-
 
 4. Abra o browser em http://localhost:8080
 
