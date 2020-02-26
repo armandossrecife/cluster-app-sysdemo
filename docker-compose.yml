@@ -10,6 +10,7 @@ services:
             MYSQL_ROOT_PASSWORD: skyinfo
             MYSQL_DATABASE: dbsysmodelo
         ports:
+            # <Port exposed> : < MySQL Port running inside container>
             - '3306'
         expose:
             # Opens port 3306 on the container
@@ -25,6 +26,18 @@ services:
         container_name: app-server-1
         ports:
             - "8080:8080"
+        networks: 
+            - my-app-network
+        depends_on:
+            - "mydb"
+    node2:
+        build:
+            dockerfile: ./docker/app-server.dockerfile
+            context: .
+        image: armandoss/app-server
+        container_name: app-server-2
+        ports:
+            - "8081:8081"
         networks: 
             - my-app-network
         depends_on:
